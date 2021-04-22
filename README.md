@@ -13,8 +13,8 @@ Attention! The entire scripts only work for Costco Japan!
 
 ## Usage
 1. To run this program, you need to first set your own Cloud Vision API & Cloud Translation - Basic (v2) API. Plesae refer these two guides:
-   - Cloud Translation https://cloud.google.com/translate/docs/setup
-   - Cloud Vision https://cloud.google.com/vision/docs/setup
+   * Cloud Translation https://cloud.google.com/translate/docs/setup
+   * Cloud Vision https://cloud.google.com/vision/docs/setup
 2. Download the json file as API key and put into Root directory with renaming as "Google_Service_API.json"
 3. Run "main.py" and paste the Costco mail-magazine link, such as: https://cds.costcojapan.jp/cds/mail-images/upz/210422_rr8e/thu22d/pc_index.html when required input the link.
 4. The result of json file can be found at root directory.
