@@ -1,4 +1,3 @@
-# from Scrapy_Date import collectDate
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -23,7 +22,6 @@ class Collector:
         for imgUrl in imgList[:]:
             itemlink = imgUrl.get('src')
             itemID = itemlink.split('/')[-1].replace('.jpg','')
-            # print(itemID)
             if itemID.startswith('s') == True and itemID.startswith('sk') == False:
                 itemDict[itemID] = itemlink
 

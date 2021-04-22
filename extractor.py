@@ -1,8 +1,5 @@
 import itertools
-import os
 import re
-# from googletrans import Translator
-# translator = Translator()
 
 from google.cloud import translate_v2 as translate
 
@@ -23,24 +20,13 @@ def isMeasure(word):
         return False
 
 class Extractor:
-    # path = os.getcwd()
-    # os.chdir(path)
-    # os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= "Google_Translator_key.json"
-    
-    
     def __init__(self, OCRlist)-> list:
         self.OCRlist = OCRlist
     
     def detect_lang(self):        
         contentDict = {}
-        
-    
-        # os.chdir(os.getcwd())
-        # os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= "Google_Translator_key.json"
-        
         translate_client = translate.Client()
         for index, word in enumerate(self.OCRlist):
-            # langTag = translator.detect(word).lang
             result = translate_client.detect_language(word)
             langTag = result["language"]
 
@@ -52,10 +38,7 @@ class Extractor:
 
     def IndexSlice(self):
         contentDict = self.detect_lang()
-        # jpEnd_index = 0 
-        # price_index = 0 
-        # period_index = 0
-                
+
         for text, info in contentDict.items():
             index, langTag = info
             YenMark = ['¥', 'Y', '半', '辛']
@@ -72,16 +55,12 @@ class Extractor:
         Measurement = ['mm','cm','m', 'ml','L','g','kg','°C']
         for text, info in reversed(nameDict.items()):
             index, langTag = info
-            # if langTag != 'ja' and any(char.isdigit() for char in text) and any(unit in text for unit in Measurement):
             if langTag != 'ja' and isMeasure(text) == True:
                 jpEnd_index = index
                 break
             elif langTag == 'ja':
                 jpEnd_index = index
                 break
-#             else:
-#                 jpEnd_index = 1
-#             break
 
         return jpEnd_index, price_index, period_index
         
@@ -138,19 +117,3 @@ class Extractor:
     def __str__(self):
         jpName,enName,price,period,description = self.itemInfo()
         return "jpName: {}\nenName: {}\nPrice: {}\nPeriod: {}\nDescription: {}\n\n\n".format(jpName,enName,price,period,description)
-
-
-
-'''test
-
-textList = ['СОНО', 
-'ソフトクーラーバッグ', 
-'24缶収納', 
-'24 CAN SOFT COOLER', 
-'半6,680', 
-'ITEM# 2621058', 
-'販売中全倉庫店対象 NEW']
-
-Costco = Extractor(textList)
-print(Costco)
-'''

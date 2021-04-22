@@ -1,25 +1,15 @@
-import os
 import io
-# from io import BytesIO
 from PIL import Image
 import requests
 
 from google.cloud import vision
-# from google.cloud.vision_v1 import types
 
 class Processor:
-    # path = os.getcwd()
-    # os.chdir(path)
-    # os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= "Google_OCR_key.json"
-
     def __init__(self, itemID, url) -> str:
         self.itemID = itemID
         self.url = url
 
     def detect_text(self):
-        # path = os.getcwd()
-        # os.chdir(path)
-        # os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= "Google_OCR_key.json"
         """Detects text in the file."""
 
         img = Image.open(requests.get(self.url, stream=True).raw)
@@ -48,15 +38,3 @@ class Processor:
     def __str__(self) -> str:
         textList = self.detect_text()
         return 'OCR Result:{}'.format(textList)
-
-
-'''test'''
-
-'''
-itemID = 's2621058'
-url = 'https://cds.costcojapan.jp/cds/mail-images/upz/210418_42um/img18/s2621058.jpg'
-
-Costco = Processor(itemID, url)
-print(Costco.detect_text())
-
-'''
