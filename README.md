@@ -8,10 +8,20 @@ Attention! The entire scripts only work for Costco Japan!
 
 ## Requirements
 - Python 3.8.5 64-bit
+- Validator
 - BeautifulSoup
 - Cloud Translation - Basic (v2)
 - Cloud Vision API 
+- PIL
 
+
+Use the package manager pip to install cloud-vision and cloud-translate:
+  ```bash
+  pip install validator
+  pip install beautifulsoup4
+  pip install google-cloud-vision
+  pip install google-cloud-translate
+  ```
 
 ## Usage
 1. To run this program, you need to first set your own Cloud Vision API & Cloud Translation - Basic (v2) API. Plesae refer these two guides:
