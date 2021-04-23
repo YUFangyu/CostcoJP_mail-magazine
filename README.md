@@ -13,6 +13,7 @@ Attention! The entire scripts only work for Costco Japan!
 - Cloud Translation - Basic (v2)
 - Cloud Vision API 
 - PIL
+- lxml
 
 
 Use the package manager pip to install cloud-vision and cloud-translate:
@@ -21,6 +22,8 @@ Use the package manager pip to install cloud-vision and cloud-translate:
   pip install beautifulsoup4
   pip install google-cloud-vision
   pip install google-cloud-translate
+  pip install Pillow
+  pip install lxml
   ```
 
 ## Usage
