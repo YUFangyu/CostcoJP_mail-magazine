@@ -1,4 +1,4 @@
-import validators
+# import validator
 import os
 
 from collector import Collector
@@ -14,8 +14,8 @@ def main():
     os.chdir(os.getcwd())
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= "Google_Service_API.json"
 
-    site = input("Please paste Costco link here:")
-    assert validators.url(site) == True, "Please input correct url!"
+    site = input("Please paste Costco link here: ")
+    # assert validator.url(site) == True, "Please input correct url!"
         
 
     Costco_collector = Collector(site)
@@ -29,6 +29,7 @@ def main():
         Costco_extractor = Extractor(textList)
         result = Costco_extractor.itemInfo()
         record_dict[itemID.replace('s','').replace('_1','')] = result
+        break
 
     Costco_recorder = Recorder(discountDate, record_dict )
     Costco_recorder.record_json()

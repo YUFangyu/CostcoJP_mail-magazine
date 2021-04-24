@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "third-strategy-309712",
+  "private_key_id": "56c18d302849da761b4693083a1e47f5afa7b14f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCb/2Yc4cusF42m\nNDp6k3sdgSbrDH+GSNvAZ5Rs6yrKPEyite1PFN3b3aRSD6YI17kulGDq++5I1Vap\n7MTDb4R/PYRMqeN6QphLmYijPzYvXjcgjWA24JtgY8h+MTd5Xe2UyJbIISkVyGUr\nxvszRMn7UJPwlDGbj8KWQ37I/zlPl77QWdHBKHKL7/6lyj5fgr+zRVibr4MaMV5F\nL6ewHnyRBx/uCRaqkXmMtVS4mLVJYi1v74pGSq6qI6xmiyIfmrhqCBoZCsL+QXoi\nI8Wz6YXVmtZda+B1WfvqpHWsXW59T+hlwhgxrS+aht3kyrZCo6rCg4iZW2rNvipJ\nLH9XUiqvAgMBAAECggEAA+R7EU4HDYIm8pZyCrX1+y+XH4O+ON6sV3nRYWhhNtuk\n7X7ZolpuCmFWizlA8A6MXEYVwJ2zSlXC2SM2nUo0+N6f/jCGo+A+hmbMQVQl9eE4\nqFMuxLlh1yVjDtcLWdFte+o6oCX64JErPEzoq4ftyRuvg7zG6ILm6ZknwQjK6Gcu\n2fK/oxu4CssQ8agSUqz/bADLsfozkOYyylTTLgln/91yC89QJpkD1kFRYEXCXNcr\nCOoIa5n8vFxSTvxhbu5nvA+2+cGep9i1BjO75wUisK23zG428m+g4zMl9SJNmh57\n1Aur5d44yuSMIPh7WNVTBlo6F1uylL7u+m98z/nQAQKBgQDOgUqp75oVQfd5I1W8\nNiaxUk9O7OWndyYKfw1EhRFFMnC7Oc/47tMW4GFz6gCfs+I43UGfy3s65u82/KPG\n0xoapQ7N9hvtpPsc5CPjjb1BDhb5JpA3vnVJ0TYX/F6A5c+4lA9y52KZ7ceVXp8P\nI358AENrDVOZtebjqmJRbD5wAQKBgQDBYxTbKicJOMPagrgDrjOS3Rl26MYUElqq\nnwLTbvaq/76nwn2ogogK9wnftnL6ND+eZaVk+MQozPrmxIOuQDUekLIAH0U+uaqK\n78OozDsvmLDb7EsDjN1RlY0OQjtVaOYvVEno0Ws/EjbVkcTYnoQGX55FZ+7HZWhD\n4rRxeUOarwKBgC2Catz2k+N5bTuCIQPgfzh25kmDhb0ZUgXgKCFgngS88AEi5YV7\nxIN3IaL0//wyHXngsPSxWFAL0s4wcTuBDHCwzYlwYolF4Z1lXc9pTjsHCuMPr5rJ\nW3nQJHa2xHDttJB9+MWe3qkDsQdnGfCxJs/XEwSFpFXss5ya0R4Wl9ABAoGAMSAC\nREpI8EbDOdbK9+RgpYYU2ef3qVGgRoduKFefwYCF5ge58/x0opRupa2rN3PeVVZs\n1WF8MwEfG1AAQ1t8Iu+OyAkphe2ULQcLJO38evLGupcj1xsJfZgH5P9eIywqjQtU\nWxgXrkXqOAZ3gq+Byjyv7+Ge/nf8LIKCY/DyA3ECgYBP/O6btO844Y/eOA2SHHjk\nGhjnlLX7uA5wVIfomVeqCfajeVu4raLViYwIGs91vfo31Dxj3Viq7ggKXkKVhLV9\n6bMR6mo3UhubsvVSL0isSNuUJ4NuK0hqx1Db+GmXyq5qzRbFo3uSLzim1mVirpNd\naN06OpZWFflu+8hQJ7dXfw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "costco-weekly@third-strategy-309712.iam.gserviceaccount.com",
+  "client_id": "103803714983780158714",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/costco-weekly%40third-strategy-309712.iam.gserviceaccount.com"
+}
